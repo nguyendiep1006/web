@@ -1,0 +1,167 @@
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* Colors - Tông Đen/Vàng Đồng */
+  --white-color: #fff;
+  --dark-color: #faf3e0; /* Màu Kem/Trắng Sáng cho chữ trên nền Tối */
+  --primary-color: #252525; /* Màu Đen làm nền chính */
+  --secondary-color: #c68a4d; /* Màu Vàng Đồng/Caramel làm điểm nhấn */
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
+  /* Font size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*Stylings for whole site*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  width: 100%;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 0px 20px;
+  max-width: var(--site-max-width);
+}
+
+/* ------------------------------------ */
+/* Navbar styling (Đã được điều chỉnh cho phù hợp với Bootstrap) */
+/* ------------------------------------ */
+header {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  /* Background: Mặc định là primary-color (Đen), nhưng sẽ được đặt lại trong thẻ <nav> HTML */
+  background: var(--primary-color);
+}
+
+/* Các style Navbar cũ đã được thay thế bằng style Bootstrap,
+   chỉ giữ lại style logo và link hover/active tự custom */
+
+.navbar .nav-menu .nav-link {
+  padding: 10px 18px;
+  /* color đã được set inline trong HTML để tương thích Bootstrap, 
+     nhưng giữ lại style này để dự phòng hoặc cho các trạng thái khác */
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  border-radius: var(--border-radius-m);
+  transition: 0.3s ease;
+}
+
+/* Hiệu ứng hover cho menu item */
+.navbar .nav-menu .nav-link:hover {
+  color: var(--primary-color) !important; /* Đổi thành màu nền chính (Đen) */
+  background: var(--secondary-color); /* Nền vàng đồng nổi bật */
+}
+
+/* ------------------------------------ */
+/* Hero section styling */
+/* ------------------------------------ */
+.hero-section {
+  min-height: 100vh;
+  background: var(--primary-color); /* Nền Đen */
+}
+.hero-section .section-content {
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+.hero-section .hero-details {
+  color: var(--white-color); /* Chữ trắng trên nền đen */
+}
+.hero-section .hero-details .title {
+  font-size: var(--font-size-xxl);
+  color: var(--secondary-color); /* Tiêu đề Vàng Đồng */
+  font-family: "Miniver", sans-serif;
+}
+.hero-section .hero-details .subtitle {
+  margin-top: 8px;
+  max-width: 70%;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+.hero-section .hero-details .description {
+  max-width: 70%;
+  margin: 24px 0 40px;
+  font-size: var(--font-size-m);
+}
+.hero-section .hero-details .buttons {
+  display: flex;
+  gap: 23px;
+}
+/* Nút Order Now (Màu nhấn) */
+.hero-section .hero-details .button {
+  padding: 10px 26px;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-m);
+  background: var(--secondary-color); /* Nền Vàng Đồng */
+  color: var(--primary-color); /* Chữ Đen */
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  transition: 0.3s ease;
+}
+/* Hiệu ứng hover cho nút Order Now */
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .button.contact-us {
+  color: var(--white-color); /* Chữ Trắng */
+  border-color: var(--white-color);
+  background: transparent;
+}
+/* Nút Contact Us (Nền trong suốt, viền trắng) */
+.hero-section .hero-details .button.contact-us:hover {
+  color: var(--primary-color); /* Chữ Đen */
+  background: var(--secondary-color); /* Nền Vàng Đồng */
+  border-color: var(--secondary-color);
+}
+.hero-section .hero-image-wrapper {
+  max-width: 500px;
+  margin-right: 30px;
+}
+/* ------------------------------------ */
+/* Menu section styling (Cơ bản)        */
+/* ------------------------------------ */
+.menu-section {
+  min-height: 100vh;
+  background: var(--primary-color); /* Nền Đen */
+}

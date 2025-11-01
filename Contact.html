@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Stella Coffee</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font đẹp -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/contact.css">
+</head>
+
+<body>
+    <!-- Thanh điều hướng -->
+    <header>
+        <nav class="navbar fixed-top navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="assets/images/logo.png" alt="Logo Coffee"
+                        style="width: 60px; height: auto; margin-right: 8px;">
+                    <span class="fw-bold text-light">STELLA COFFEE</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">MENU</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link text-light" href="index.html">Trang chủ</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="#">Giới thiệu</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="Menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="#">Thư viện</a></li>
+                            <li class="nav-item"><a class="nav-link text-light active" href="Contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+        <section class="contact-section">
+            <!-- Animated Background Shapes -->
+            <div class="bg-shape bg-shape-1"></div>
+            <div class="bg-shape bg-shape-2"></div>
+            <div class="bg-shape bg-shape-3"></div>
+            <div class="bg-shape bg-shape-4"></div>
+            
+            <!-- Decorative Background Elements -->
+            <div class="coffee-bean coffee-bean-1"></div>
+            <div class="coffee-bean coffee-bean-2"></div>
+            <div class="coffee-bean coffee-bean-3"></div>
+            <div class="coffee-bean coffee-bean-4"></div>
+            <div class="coffee-steam steam-1"></div>
+            <div class="coffee-steam steam-2"></div>
+            <div class="coffee-steam steam-3"></div>
+            
+            <!-- Decorative Corner Elements -->
+            <div class="decorative-corner corner-top-left"></div>
+            <div class="decorative-corner corner-top-right"></div>
+            <div class="decorative-corner corner-bottom-left"></div>
+            <div class="decorative-corner corner-bottom-right"></div>
+            
+            <!-- Background Pattern SVG -->
+            <div class="bg-pattern"></div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="contact-header text-center fade-in-up">
+                    <div class="header-decoration">
+                        <div class="decoration-line left-line"></div>
+                        <div class="header-icon-wrapper">
+                            <div class="icon-glow"></div>
+                            <img src="assets/images/logo.png" alt="Stella Coffee Logo" class="header-logo-icon">
+                        </div>
+                        <div class="decoration-line right-line"></div>
+                    </div>
+                    <h1>Liên Hệ Với Chúng Tôi</h1>
+                    <p class="subtitle-text">Chúng tôi rất mong nhận được phản hồi từ bạn!</p>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <!-- Form liên hệ -->
+                    <div class="col-lg-7">
+                        <div class="contact-form-wrapper fade-in-left">
+                            <div class="form-decoration-top"></div>
+                            <div class="form-icon-header">
+                                <h2>Gửi Tin Nhắn</h2>
+                            </div>
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group-wrapper">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 5px;">
+                                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                            </svg>
+                                            Họ và Tên *
+                                        </label>
+                                        <input type="text" class="form-control" id="name" name="name" required
+                                            placeholder="Nhập họ và tên của bạn">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 5px;">
+                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                            </svg>
+                                            Email *
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" required
+                                            placeholder="example@email.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 5px;">
+                                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                            </svg>
+                                            Số Điện Thoại
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="0123 456 789">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="purpose" class="form-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 5px;">
+                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                            Mục Đích Liên Hệ *
+                                        </label>
+                                        <select class="form-control" id="purpose" name="purpose" required>
+                                            <option value="" disabled selected>Vui lòng chọn mục đích</option>
+                                            <option value="booking">❤️ Đặt bàn / Đặt chỗ</option>
+                                            <option value="delivery">🚚 Đặt hàng giao tận nơi</option>
+                                            <option value="event">🎉 Tổ chức sự kiện</option>
+                                            <option value="feedback">💬 Phản hồi / Góp ý</option>
+                                            <option value="complaint">⚠️ Khiếu nại</option>
+                                            <option value="cooperation">🤝 Hợp tác kinh doanh</option>
+                                            <option value="recruitment">👔 Tuyển dụng</option>
+                                            <option value="other">📋 Khác</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 5px;">
+                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                            </svg>
+                                            Chủ Đề *
+                                        </label>
+                                        <input type="text" class="form-control" id="subject" name="subject" required
+                                            placeholder="Chủ đề tin nhắn">
+                                    </div>
+                                    <!-- Honeypot field để chống spam -->
+                                    <input type="text" name="website" id="website" style="position: absolute; left: -9999px;" tabindex="-1" autocomplete="off">
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 5px;">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                            </svg>
+                                            Tin Nhắn *
+                                        </label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required
+                                            placeholder="Nhập tin nhắn của bạn..."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-submit">
+                                        <span class="btn-text">Gửi Tin Nhắn</span>
+                                        <span class="btn-loader d-none">
+                                            <span class="spinner"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="form-decoration-bottom"></div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin liên hệ -->
+                    <div class="col-lg-5">
+                        <div class="contact-info-wrapper fade-in-right">
+                            <div class="info-decoration-top"></div>
+                            <!-- Decorative Logo -->
+                            <div class="info-coffee-icons">
+                                <div class="info-coffee-icon icon-1">
+                                    <img src="assets/images/logo.png" alt="Stella Coffee Logo" class="info-logo-img">
+                                </div>
+                            </div>
+                            <!-- Large Coffee Icon Pattern -->
+                            <div class="info-large-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#c8924f" viewBox="0 0 16 16" opacity="0.2">
+                                    <path d="M5 8a2.5 2.5 0 1 0 2 4h2a2.5 2.5 0 1 0 2-4V6.5a.5.5 0 0 1 1 0V8a3.5 3.5 0 1 1-7 0V6.5a.5.5 0 0 1 1 0V8Z"/>
+                                    <path d="M11.89 3.26l-.04-.87a.75.75 0 1 0-1.5.05l.04.87c.07.36.11.73.11 1.15 0 1.38-1.12 2.5-2.5 2.5H8.85l-.38 3.04a.75.75 0 1 0 1.46.32L10.2 8.5h.3c1.38 0 2.5-1.12 2.5-2.5 0-.42-.04-.79-.11-1.15Z"/>
+                                    <circle cx="3" cy="12" r="2" fill="#c8924f" opacity="0.3"/>
+                                    <circle cx="13" cy="4" r="1.5" fill="#c8924f" opacity="0.3"/>
+                                    <circle cx="2" cy="4" r="1" fill="#c8924f" opacity="0.3"/>
+                                </svg>
+                            </div>
+                            <div class="info-icon-header">
+                                <h2>Thông Tin Liên Hệ</h2>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-info-details">
+                                    <h4>Địa Chỉ</h4>
+                                    <p>123 Đường Cầu Giấy, Phường Cầu Giấy<br> TP. Hà Nội</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-info-details">
+                                    <h4>Điện Thoại</h4>
+                                    <p><a href="tel:+84123456789">0123 456 789</a></p>
+                                    <p><a href="tel:+84987654321">0987 654 321</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-info-details">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:info@stellacoffee.com">info@stellacoffee.com</a></p>
+                                    <p><a href="mailto:support@stellacoffee.com">support@stellacoffee.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-info-details">
+                                    <h4>Giờ Mở Cửa</h4>
+                                    <p>Thứ 2 - Thứ 6: 7:00 - 22:00<br>Thứ 7 - Chủ Nhật: 8:00 - 23:00</p>
+                                </div>
+                            </div>
+
+                            <!-- Social Media Links -->
+                            <div class="social-media-section">
+                                <h4>Kết Nối Với Chúng Tôi</h4>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon" title="Facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon" title="Instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon" title="Zalo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon" title="TikTok">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="info-decoration-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="map-wrapper fade-in-up">
+                            <!-- Decorative Icons Around Map -->
+                            <div class="map-decorative-icons">
+                                <div class="map-decor-icon map-icon-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="#c8924f" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                        <circle cx="8" cy="6" r="1.5" fill="#c8924f"/>
+                                    </svg>
+                                </div>
+                                <div class="map-decor-icon map-icon-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="#c8924f" viewBox="0 0 16 16">
+                                        <path d="M5 8a2.5 2.5 0 1 0 2 4h2a2.5 2.5 0 1 0 2-4V6.5a.5.5 0 0 1 1 0V8a3.5 3.5 0 1 1-7 0V6.5a.5.5 0 0 1 1 0V8Z"/>
+                                        <path d="M11.89 3.26l-.04-.87a.75.75 0 1 0-1.5.05l.04.87c.07.36.11.73.11 1.15 0 1.38-1.12 2.5-2.5 2.5H8.85l-.38 3.04a.75.75 0 1 0 1.46.32L10.2 8.5h.3c1.38 0 2.5-1.12 2.5-2.5 0-.42-.04-.79-.11-1.15Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="map-header text-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#c8924f" viewBox="0 0 16 16" style="margin-bottom: 10px;">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                <h2>Vị Trí Của Chúng Tôi</h2>
+                                <p class="map-subtitle">Ghé thăm cửa hàng của chúng tôi!</p>
+                            </div>
+                            <div class="map-container">
+                                <!-- Lazy-load Map -->
+                                <div class="map-wrapper-lazy" id="map-section" 
+                                    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4640.594078069213!2d105.80084557601275!3d21.02815948779765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab424a50fff9%3A0xbe3a7f3670c0a45f!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBHaWFvIFRow7RuZyBW4bqtbiBU4bqjaQ!5e1!3m2!1svi!2s!4v1761988107381!5m2!1svi!2s">
+                                    <div class="map-placeholder">
+                                        <div class="map-loading-spinner"></div>
+                                        <p>Đang tải bản đồ...</p>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=123+Đường+Cầu+Giấy,+Phường+Cầu+Giấy,+Hà+Nội" 
+                                           target="_blank" class="btn-map-directions">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                            </svg>
+                                            Chỉ đường đến Stella Coffee
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#c8924f" viewBox="0 0 16 16" class="toast-icon">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.061L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+            <div class="toast-text">
+                <strong>Thành công!</strong>
+                <p>Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong vòng 24 giờ.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating CTA Buttons -->
+    <div class="floating-cta-buttons">
+        <!-- Call Button -->
+        <a href="tel:0123456789" class="floating-call" aria-label="Gọi ngay">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+        </a>
+        <!-- Booking Button -->
+        <a href="#contactForm" class="floating-booking" aria-label="Đặt bàn ngay">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+            </svg>
+            <span class="btn-label">Đặt Bàn</span>
+        </a>
+    </div>
+
+    <!-- Script xử lý -->
+    <script>
+        // Form Validation & Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Honeypot check
+            const honeypot = document.getElementById('website').value;
+            if (honeypot) {
+                return; // Spam detected, silently fail
+            }
+            
+            const btn = this.querySelector('.btn-submit');
+            const btnText = btn.querySelector('.btn-text');
+            const btnLoader = btn.querySelector('.btn-loader');
+            
+            // Validate form
+            if (!this.checkValidity()) {
+                this.reportValidity();
+                return;
+            }
+            
+            // Show loading
+            btnText.classList.add('d-none');
+            btnLoader.classList.remove('d-none');
+            btn.disabled = true;
+            
+            // Simulate form submission (thay bằng API call thực tế)
+            setTimeout(() => {
+                // TODO: Gửi data đến server
+                // fetch('/api/contact', { method: 'POST', body: new FormData(this) })
+                //   .then(response => response.json())
+                //   .then(data => { showToast(); });
+                
+                // Show toast
+                showToast();
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button
+                btnText.classList.remove('d-none');
+                btnLoader.classList.add('d-none');
+                btn.disabled = false;
+            }, 1500);
+        });
+        
+        // Toast Notification
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+        
+        // Lazy Load Map
+        function loadMap() {
+            const wrapper = document.getElementById('map-section');
+            if (!wrapper || wrapper.classList.contains('loaded')) return;
+            
+            const src = wrapper.dataset.src;
+            const iframe = document.createElement('iframe');
+            iframe.src = src;
+            iframe.width = "100%";
+            iframe.height = "400";
+            iframe.style.border = "0";
+            iframe.loading = "lazy";
+            iframe.allowFullscreen = true;
+            iframe.referrerPolicy = "no-referrer-when-downgrade";
+            
+            wrapper.innerHTML = '';
+            wrapper.appendChild(iframe);
+            wrapper.classList.add('loaded');
+        }
+        
+        // Intersection Observer for lazy-loading map
+        if ('IntersectionObserver' in window) {
+            const mapObserver = new IntersectionObserver(entries => {
+                if (entries[0].isIntersecting) {
+                    loadMap();
+                    mapObserver.disconnect();
+                }
+            }, { threshold: 0.2 });
+            
+            const mapSection = document.getElementById('map-section');
+            if (mapSection) {
+                mapObserver.observe(mapSection);
+            }
+        } else {
+            // Fallback for older browsers
+            window.addEventListener('load', loadMap);
+        }
+        
+        // Smooth scroll for booking button
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
