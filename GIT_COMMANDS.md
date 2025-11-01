@@ -1,6 +1,6 @@
-# Các Lệnh Git Để Đẩy Code Lên Repository
+# Các Lệnh Git Để Đẩy Code Lên Nhánh Khác
 
-## Nếu chưa có Git repository, khởi tạo trước:
+## ⚠️ Nếu chưa có Git repository, khởi tạo trước:
 
 ```bash
 # 1. Khởi tạo Git repository
@@ -13,7 +13,70 @@ git remote add origin YOUR_REPO_URL
 git remote -v
 ```
 
-## Các lệnh để commit và push code:
+## 🚀 Đẩy code lên nhánh khác (KHÔNG phải main):
+
+### Cách 1: Tạo nhánh mới và push
+
+```bash
+# 1. Xem các file đã thay đổi
+git status
+
+# 2. Thêm tất cả các file đã thay đổi
+git add .
+
+# 3. Commit với message
+git commit -m "Cải thiện trang Contact: thêm banner, tối ưu UI/UX, cập nhật form và map"
+
+# 4. Tạo nhánh mới và chuyển sang nhánh đó
+git checkout -b feature/contact-improvements
+
+# Hoặc tên nhánh khác:
+git checkout -b develop
+# hoặc
+git checkout -b hotfix/contact-update
+# hoặc
+git checkout -b contact-page
+
+# 5. Đẩy code lên nhánh mới
+git push origin feature/contact-improvements
+
+# Hoặc nếu muốn set upstream ngay:
+git push -u origin feature/contact-improvements
+```
+
+### Cách 2: Chuyển sang nhánh đã có sẵn
+
+```bash
+# 1. Xem tất cả các nhánh
+git branch -a
+
+# 2. Chuyển sang nhánh đã có
+git checkout develop
+# hoặc
+git checkout feature/contact
+
+# 3. Thêm và commit code
+git add .
+git commit -m "Cải thiện trang Contact: thêm banner, tối ưu UI/UX, cập nhật form và map"
+
+# 4. Đẩy lên nhánh đó
+git push origin develop
+```
+
+### Cách 3: Đẩy code hiện tại lên nhánh khác (không chuyển nhánh)
+
+```bash
+# 1. Thêm và commit code
+git add .
+git commit -m "Cải thiện trang Contact: thêm banner, tối ưu UI/UX, cập nhật form và map"
+
+# 2. Đẩy trực tiếp lên nhánh khác (từ nhánh hiện tại)
+git push origin HEAD:feature/contact-improvements
+# hoặc
+git push origin HEAD:develop
+```
+
+## 📝 Các lệnh để commit và push code (tổng quát):
 
 ```bash
 # 1. Xem các file đã thay đổi
