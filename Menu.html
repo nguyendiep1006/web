@@ -17,70 +17,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/style.css">
-
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: #f5f5f5;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .navbar {
-            background-color: #252525;
-        }
-
-        .menu-section {
-            min-height: 100vh;
-            padding-top: 100px;
-            text-align: center;
-            background-color: #1e1e1e;
-        }
-
-        .menu-section h1 {
-            color: #c8924f;
-            font-family: "Pacifico", cursive;
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-        }
-
-        .menu-section p {
-            color: #ddd;
-            margin-bottom: 50px;
-        }
-
-        .card {
-            background-color: #2c2c2c;
-            border: none;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .card img {
-            transition: transform 0.4s ease;
-        }
-
-        .card:hover img {
-            transform: scale(1.05);
-        }
-
-        .card-title {
-            color: #c8924f;
-            font-weight: 600;
-        }
-
-        .card-text {
-            color: #bbb;
-        }
-
-        .price {
-            color: #f5f5f5;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/menu.css">
 </head>
 
 <body>
@@ -122,9 +59,44 @@
     <!-- Nội dung chính -->
     <main>
         <section class="menu-section">
+            <!-- Animated Background Shapes -->
+            <div class="bg-shape bg-shape-1"></div>
+            <div class="bg-shape bg-shape-2"></div>
+            <div class="bg-shape bg-shape-3"></div>
+            <div class="bg-shape bg-shape-4"></div>
+            
+            <!-- Decorative Background Elements -->
+            <div class="coffee-bean coffee-bean-1"></div>
+            <div class="coffee-bean coffee-bean-2"></div>
+            <div class="coffee-bean coffee-bean-3"></div>
+            <div class="coffee-bean coffee-bean-4"></div>
+            <div class="coffee-steam steam-1"></div>
+            <div class="coffee-steam steam-2"></div>
+            <div class="coffee-steam steam-3"></div>
+            
+            <!-- Decorative Corner Elements -->
+            <div class="decorative-corner corner-top-left"></div>
+            <div class="decorative-corner corner-top-right"></div>
+            <div class="decorative-corner corner-bottom-left"></div>
+            <div class="decorative-corner corner-bottom-right"></div>
+            
+            <!-- Background Pattern SVG -->
+            <div class="bg-pattern"></div>
+            
             <div class="container">
-                <h1>☕ Menu Sản Phẩm Của Chúng Tôi ☕</h1>
-                <p>Hãy lựa chọn sản phẩm phù hợp với riêng mình!</p>
+                <div class="menu-header text-center fade-in-up">
+                    <div class="header-decoration">
+                        <div class="decoration-line left-line"></div>
+                        <div class="header-icon-wrapper">
+                            <div class="icon-glow"></div>
+                            <img src="assets/images/logo1.png" alt="Logo Stella Coffee" class="header-logo-icon">
+                        </div>
+                        <div class="decoration-line right-line"></div>
+                    </div>
+                    <h1>Our Menu</h1>
+                    <p class="subtitle-text">Choose the perfect product for yourself!</p>
+                    <div class="header-underline"></div>
+                </div>
 
                 <div class="row g-4 justify-content-center">
                     <!-- Sản phẩm 1 -->

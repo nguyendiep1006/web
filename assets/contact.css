@@ -45,7 +45,7 @@
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 150px 150px;
     z-index: 0;
     pointer-events: none;
-    animation: backgroundPulse 15s ease-in-out infinite;
+    /* animation: backgroundPulse 15s ease-in-out infinite; */
 }
 
 /* Animated Background Pattern Overlay */
@@ -99,7 +99,7 @@
     background: linear-gradient(135deg, #8b6f47 0%, #5c4427 100%);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     opacity: 0.15;
-    animation: float 15s infinite ease-in-out;
+    /* animation: float 15s infinite ease-in-out; */
     z-index: 0;
 }
 
@@ -168,7 +168,7 @@
     background: linear-gradient(to top, rgba(200, 146, 79, 0.1), transparent);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     opacity: 0.2;
-    animation: steam-rise 8s infinite ease-in-out;
+    /* animation: steam-rise 8s infinite ease-in-out; */
 }
 
 .steam-1 {
@@ -213,7 +213,7 @@
     border-radius: 50%;
     background: radial-gradient(circle, rgba(200, 146, 79, 0.1), transparent);
     z-index: 0;
-    animation: shapeFloat 20s infinite ease-in-out;
+    /* animation: shapeFloat 20s infinite ease-in-out; */
     pointer-events: none;
 }
 
@@ -276,7 +276,7 @@
     opacity: 0.5;
     z-index: 0;
     pointer-events: none;
-    animation: patternMove 30s linear infinite;
+    /* animation: patternMove 30s linear infinite; */
 }
 
 @keyframes patternMove {
@@ -344,7 +344,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeInDown 1s ease-out;
+    /* animation: fadeInDown 1s ease-out; */
     z-index: 10;
 }
 
@@ -390,7 +390,7 @@
     background: linear-gradient(to right, transparent, #c8924f, transparent);
     flex: 1;
     max-width: 150px;
-    animation: lineExpand 2s ease-in-out;
+    /* animation: lineExpand 2s ease-in-out; */
 }
 
 @keyframes lineExpand {
@@ -422,7 +422,7 @@
     height: 80px;
     background: radial-gradient(circle, rgba(200, 146, 79, 0.2), transparent);
     border-radius: 50%;
-    animation: pulse 2s infinite;
+    /* animation: pulse 2s infinite; */
 }
 
 @keyframes pulse {
@@ -440,7 +440,7 @@
     position: relative;
     z-index: 1;
     filter: drop-shadow(0 0 10px rgba(200, 146, 79, 0.5));
-    animation: iconFloat 3s ease-in-out infinite;
+    /* animation: iconFloat 3s ease-in-out infinite; */
 }
 
 .header-logo-icon {
@@ -450,7 +450,6 @@
     position: relative;
     z-index: 1;
     filter: drop-shadow(0 0 10px rgba(200, 146, 79, 0.5));
-    animation: iconFloat 3s ease-in-out infinite;
     transition: all 0.3s ease;
 }
 
@@ -468,7 +467,7 @@
     z-index: 1;
     margin-top: 5px;
     filter: drop-shadow(0 0 8px rgba(200, 146, 79, 0.4));
-    animation: iconFloat 3s ease-in-out infinite 1.5s;
+    /* animation: iconFloat 3s ease-in-out infinite 1.5s; */
     transition: all 0.3s ease;
     opacity: 0.9;
 }
@@ -499,7 +498,7 @@
     text-shadow: 0 4px 30px rgba(200, 146, 79, 0.5);
     letter-spacing: 2px;
     position: relative;
-    animation: textGlow 3s ease-in-out infinite;
+    /* animation: textGlow 3s ease-in-out infinite; */
     font-family: "Poppins", sans-serif;
 }
 
@@ -607,7 +606,7 @@
     max-height: 30px;
     object-fit: contain;
     filter: drop-shadow(0 0 8px rgba(200, 146, 79, 0.4));
-    animation: iconFloat 3s ease-in-out infinite 0.5s;
+    /* animation: iconFloat 3s ease-in-out infinite 0.5s; */
     transition: all 0.3s ease;
     opacity: 0.85;
 }
@@ -789,7 +788,7 @@
 .info-coffee-icon.icon-1 {
     top: 0;
     right: 0;
-    animation: floatUpDown 4s ease-in-out infinite;
+    /* animation: floatUpDown 4s ease-in-out infinite; */
     background: radial-gradient(circle, rgba(200, 146, 79, 0.1), transparent);
     border-radius: 50%;
     padding: 8px;
@@ -817,7 +816,7 @@
     width: 60px;
     height: 60px;
     opacity: 0.3;
-    animation: floatUpDown 4s ease-in-out infinite 2s;
+    /* animation: floatUpDown 4s ease-in-out infinite 2s; */
 }
 
 .contact-info-wrapper:hover .info-coffee-icon {
@@ -1133,14 +1132,14 @@
     left: -50px;
     top: 50%;
     transform: translateY(-50%);
-    animation: floatLeft 6s ease-in-out infinite;
+    /* animation: floatLeft 6s ease-in-out infinite; */
 }
 
 .map-icon-right {
     right: -50px;
     top: 50%;
     transform: translateY(-50%);
-    animation: floatRight 6s ease-in-out infinite;
+    /* animation: floatRight 6s ease-in-out infinite; */
 }
 
 .map-wrapper:hover .map-decor-icon {
@@ -1173,7 +1172,7 @@
 
 .map-header svg {
     filter: drop-shadow(0 0 10px rgba(200, 146, 79, 0.4));
-    animation: iconFloat 3s ease-in-out infinite;
+    /* animation: iconFloat 3s ease-in-out infinite; */
 }
 
 .map-wrapper h2 {
@@ -1223,18 +1222,8 @@
     border: none;
 }
 
-/* Animations */
-.fade-in-up {
-    animation: fadeInUp 0.8s ease-out;
-}
-
-.fade-in-left {
-    animation: fadeInLeft 0.8s ease-out;
-}
-
-.fade-in-right {
-    animation: fadeInRight 0.8s ease-out;
-}
+/* Animations - Disabled */
+/* .fade-in-up, .fade-in-left, .fade-in-right - animations disabled */
 
 @keyframes fadeInUp {
     from {
@@ -1427,7 +1416,7 @@
     border: 4px solid rgba(200, 146, 79, 0.2);
     border-top-color: #c8924f;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    /* animation: spin 1s linear infinite; */
     margin: 0 auto 20px;
 }
 
